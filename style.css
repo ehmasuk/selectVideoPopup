@@ -1,0 +1,275 @@
+p {
+    margin: 0;
+}
+
+.select-preference-wraper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000078;
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
+}
+.select-preference-wraper .select-popup {
+    width: 900px;
+    max-width: 95%;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    box-shadow: rgba(34, 34, 34, 0.16) 0px 8px 24px;
+}
+.select-preference-wraper .select-popup .select-popup-inner {
+    display: flex;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 15px;
+}
+.select-preference-wraper .select-popup .select-popup-inner .select-left {
+    flex-basis: 50%;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 15px;
+}
+.select-preference-wraper .select-popup .select-popup-inner .select-right {
+    flex-basis: 50%;
+    padding: 40px 32px;
+}
+.select-preference-wraper .select-popup .select-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.select-preference-wraper .select-popup .select-des {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.select-left .select-left-title {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, #c208c1, #fcb704);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.select-left-des {
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.select-right .single-plan {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #4c4c4c5e;
+    cursor: pointer;
+    position: relative;
+}
+.select-right .single-plan:hover {
+    border: 3px solid #c208c1;
+}
+.select-right .plan-active {
+    border: 3px solid #c208c1;
+}
+.select-right .plan-active:hover {
+    border: 3px solid #c208c1;
+}
+.single-plan .plan-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #4c4c4c;
+}
+.single-plan .plan-des {
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 1.5;
+}
+.single-plan .plan-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #4c4c4c;
+}
+.single-plan .plan-price span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4c4c4c;
+    line-height: 20px;
+}
+.plan-active .plan-title {
+    color: #000;
+}
+.plan-active .plan-des {
+    color: #000;
+}
+.plan-active .plan-price {
+    color: #000;
+}
+.plan-active .plan-price span {
+    color: #000;
+}
+
+.select-popup > .fa-times:hover {
+    background-color: red;
+}
+.select-popup > .fa-times {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    background-color: #4c4c4c;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.single-plan .savings-text {
+    color: #fff;
+    background-color: #c9c9c9;
+    font-size: 11px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    padding: 2px 10px 3px 10px;
+    border-radius: 0 8px 0 8px;
+    font-weight: 600;
+}
+.single-plan:hover > .savings-text {
+    background-color: #c208c1;
+}
+.plan-active .savings-text {
+    background-color: #c208c1;
+}
+.select-popup .infos .fa-check-circle {
+    color: #4c4c4c;
+    margin-right: 10px;
+}
+.select-popup .infos {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+.select-popup .payment-btn {
+    background-color: #c208c1;
+    width: 100%;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    height: 48px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.select-popup .payment-btn:hover {
+    background-color: #920792;
+}
+.select-popup .payment-small-text {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.select-popup .left-side-details .main-details .details-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+.select-popup .left-side-details .main-details .details-des {
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-bottom: 40px;
+}
+
+.select-popup .left-side-details .details-wrap {
+    position: relative;
+    padding-left: 50px;
+}
+.select-popup .left-side-details .details-wrap .svg-com-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #c208c1;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 29px;
+}
+.select-popup .left-side-details .details-wrap .svg-first {
+    line-height: 27px;
+}
+.select-popup .left-side-details .details-wrap .svg-com-wrap svg {
+    fill: #fff;
+}
+.select-popup .left-side-details .details-wrap .svg-com-wrap::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    height: 100px;
+    width: 5px;
+    background-color: #c208c1;
+    transform: translateX(-50%);
+}
+.select-popup .left-side-details .details-wrap .svg-last::before {
+    display: none;
+}
+.select-popup .infos-small {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .select-preference-wraper .select-popup .select-popup-inner .select-left {
+        display: none;
+    }
+    .select-preference-wraper .select-popup .select-popup-inner .select-right {
+        flex-basis: 100%;
+    }
+
+    .select-preference-wraper .select-popup .select-popup-inner .select-right {
+        padding: 15px;
+    }
+    .select-popup > .fa-times {
+        right: 5px;
+        top: 5px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+    }
+    .single-plan .plan-title,
+    .select-preference-wraper .select-popup .select-title {
+        font-size: 17px;
+    }
+    .single-plan .plan-des,
+    .select-preference-wraper .select-popup .select-des {
+        font-size: 14px;
+    }
+    .select-popup .infos {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .select-popup .infos-small {
+        display: flex;
+    }
+    .select-popup .payment-box {
+        margin-top: 25px;
+    }
+    .select-popup .infos .fa-check-circle {
+        margin-right: 5px;
+        color: #c208c1;
+    }
+}
